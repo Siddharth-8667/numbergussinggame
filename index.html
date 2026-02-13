@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+// Generate a random number between 1 and 10
+let randomNumber = Math.floor(Math.random() * 10) + 1;
+let guess = 0;
+
+while (guess !== randomNumber) {
+    guess = Number(prompt("Guess a number between 1 and 10:"));
+
+    if (guess === randomNumber) {
+        alert("You win!");
+        console.log("You win!");
+        break;
+    } else if (guess > randomNumber) {
+        alert("Too high! Try again.");
+    } else {
+        alert("Too low! Try again.");
+    }
+}
+
+
+</script>
+
+
+</body>
+</html>
